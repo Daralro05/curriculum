@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 24px;
+  width: 100%;
+
+  gap: 5px;
+}
+.divider {
+  border: 0.5px solid lightblue;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.dividerMed {
+  border: 0.5px solid lightblue;
+  width: 80%;
+}
+.dividerInf {
+  border: 3px solid lightblue;
+  width: 80%;
+  font-weight: 700;
+}
+
+.titulo h1 {
+  color: lightblue;
+  font-size: 36px;
+}
+
+.titulo p {
+  font-size: 18px;
+}
+
+.titulo h1 span::before {
+  content: attr(
+    data-first-letter
+  ); /* Usamos el contenido del atributo data-first-letter */
+  font-size: 44px; /* Tamaño de la primera letra */
+  /* Color de la primera letra */
+}
+/*................................................................*/
+.resumen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+
+  width: 100%;
+
+  gap: 5px;
+}
+.resumen h2 {
+  font-size: 24px;
+  color: lightblue;
+}
+.resumen p {
+  font-size: 18px;
+  width: 80%;
+  padding: 10px;
+}
+/*........................................................................*/
+.formacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 24px;
+  width: 100%;
+
+  gap: 5px;
+}
+
+.formacion h2 {
+  color: lightblue;
+  font-size: 24px;
+}
+
+.study {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: black;
+  gap: 5px;
+  padding: 10px;
+  text-align: left;
+  justify-content: left;
+  width: 80%;
+}
+/*................................................................................*/
+.trayectoria {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.trayectoria h2 {
+  color: lightblue;
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.trayectoria p,
+h3,
+ul {
+  width: 80%;
+  text-align: left;
+  justify-content: left;
+  padding: 0px;
+}
+.trayectoria ul {
+  margin-left: 80px;
+}
+/*------------------------------------------------------------------------------*/
+.aptitudes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+}
+.aptitudes h2 {
+  color: lightblue;
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.aptitudes ul {
+  width: 80%;
+  text-align: left;
+  justify-content: left;
+  margin-left: 80px;
+}
+/*-------------------------------------------------------------------------------*/
+.informacion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+}
+.informacion h2 {
+  color: lightblue;
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.informacion ul {
+  width: 80%;
+  text-align: left;
+  justify-content: left;
+  margin-left: 80px;
+}
+/*-------------------------------------------------------------------------*/
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+  gap: 5px;
+}
+.idiomas h2 {
+  color: lightblue;
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.idiomas p {
+  width: 80%;
+  text-align: left;
+  justify-content: left;
+  gap: 5px;
+}
+/*---------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .titulo h1 {
+    font-size: 30px;
+  }
+  .titulo p {
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .titulo h1 {
+    font-size: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+  }
+  .titulo p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .resumen h2,
+  .formacion h2,
+  .trayectoria h2,
+  .aptitudes h2,
+  .informacion h2,
+  .idiomas h2 {
+    font-size: 20px;
+  }
+  .trayectoria li {
+    font-size: 16px;
+    margin-right: 50px;
+  }
+  .trayectoria p,
+  h3 {
+    text-align: center;
+  }
+}
+.idiomas p {
+  text-align: center;
+}
